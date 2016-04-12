@@ -21,7 +21,7 @@
 #define DEFAULT_HOST @"api2.transloadit.com"
 
 /**Default protocol of Transloadit services*/
-#define DEFAULT_SCHEME @"http"
+#define DEFAULT_SCHEME @"https"
 
 @interface TransloaditRequest : NSObject<IApiRequest>
 {
