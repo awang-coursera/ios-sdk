@@ -29,7 +29,7 @@
         return nil;
 
     NSError *error = nil;
-    NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:[response dataUsingEncoding:NSASCIIStringEncoding] options:kNilOptions error:&error];
+    NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:[response dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:&error];
     if (jsonDict == nil || error != nil) {
         TRANSLOADIT_LOG_ERROR(self.class, error);
         return nil;
